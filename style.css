@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: rgb(27, 27, 27);
+}
+
+header h1 {
+  color: rgb(86, 142, 231);
+  text-align: center;
+  margin: 1em;
+  text-shadow: 1px 1.1px 1px rgb(247, 107, 107);
+  font-size: 3em;
+}
+
+form,
+.todo-container,
+.todo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em;
+}
+form input {
+  border: none;
+  padding: 4px;
+  color: rgb(86, 142, 231);
+  background-color: rgb(56, 62, 62);
+  text-align: center;
+  letter-spacing: 1.2px;
+  font-size: 1.4em;
+}
+form button {
+  margin-left: 6px;
+  border: none;
+  width: 25px;
+  background-color: rgb(6, 54, 81);
+  font-size: 1.4em;
+}
+
+.todo button {
+  margin-left: 6px;
+  border: none;
+  width: 16px;
+  background-color: rgb(6, 54, 81);
+}
+
+form button:hover {
+  background-color: rgb(113, 132, 135);
+}
+
+form button span {
+  font-weight: 700;
+  font-size: 1.4em;
+  color: rgb(91, 173, 121);
+}
+
+.todo {
+  justify-content: space-between;
+  background-color: rgb(67, 91, 94);
+  width: 20em;
+  flex: 1;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.todo li {
+  list-style-type: none;
+  color: rgb(247, 107, 107);
+}
+
+.todo .trash-button,
+.todo .done-button {
+  padding: 4px;
+  margin-right: 6px;
+  width: 57px;
+  color: burlywood;
+  border-radius: 4px;
+}
+.todo-item {
+  flex: 1;
+  text-align: center;
+}
+
+.trash-button:hover {
+  background-color: rgb(156, 85, 85);
+}
+
+.todo .done-button:hover {
+  background-color: rgb(97, 154, 96);
+  border-radius: 2px;
+}
+.done-div {
+  opacity: 0.5;
+}
+.done-li {
+  text-decoration: line-through;
+}
